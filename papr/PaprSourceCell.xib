@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PaprSourceCell">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-43-SZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="124"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qMK-z4-37S">
+                                <rect key="frame" x="13" y="18" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qMK-z4-37S" secondAttribute="height" multiplier="1:1" id="SJD-o8-Ea0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="source_mask_on.png" translatesAutoresizingMaskIntoConstraints="NO" id="fUD-lP-9b0">
+                                <rect key="frame" x="0.0" y="0.0" width="85" height="124"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVn-v5-fH4">
+                                <rect key="frame" x="8" y="76" width="69" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dVn-v5-fH4" secondAttribute="height" multiplier="69:40" id="Q55-FM-vBK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vs5-ba-wfm">
+                                <rect key="frame" x="55" y="10" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="edit_x.png"/>
+                                <connections>
+                                    <action selector="buDeleteSelected:" destination="gTV-IL-0wX" eventType="touchUpInside" id="EAW-A7-jIz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qMK-z4-37S" secondAttribute="trailing" constant="12" id="1kV-vc-Yyl"/>
+                            <constraint firstAttribute="bottom" secondItem="dVn-v5-fH4" secondAttribute="bottom" constant="8" id="2ZQ-2J-9x3"/>
+                            <constraint firstItem="dVn-v5-fH4" firstAttribute="leading" secondItem="5TX-43-SZQ" secondAttribute="leading" constant="8" id="90E-lF-hWr"/>
+                            <constraint firstAttribute="trailing" secondItem="dVn-v5-fH4" secondAttribute="trailing" constant="8" id="9FY-T8-Ilf"/>
+                            <constraint firstAttribute="trailing" secondItem="fUD-lP-9b0" secondAttribute="trailing" id="Bsx-mz-v8g"/>
+                            <constraint firstItem="fUD-lP-9b0" firstAttribute="top" secondItem="5TX-43-SZQ" secondAttribute="top" id="IYC-t6-Og3"/>
+                            <constraint firstItem="qMK-z4-37S" firstAttribute="leading" secondItem="5TX-43-SZQ" secondAttribute="leading" constant="13" id="Kdf-09-gdk"/>
+                            <constraint firstItem="fUD-lP-9b0" firstAttribute="leading" secondItem="5TX-43-SZQ" secondAttribute="leading" id="Q6p-NJ-cr5"/>
+                            <constraint firstItem="qMK-z4-37S" firstAttribute="top" secondItem="5TX-43-SZQ" secondAttribute="top" constant="18" id="bdn-gM-Xhf"/>
+                            <constraint firstAttribute="bottom" secondItem="fUD-lP-9b0" secondAttribute="bottom" id="xoY-LG-NvC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5TX-43-SZQ" secondAttribute="bottom" id="53Q-WK-oJA"/>
+                <constraint firstAttribute="trailing" secondItem="5TX-43-SZQ" secondAttribute="trailing" id="FW8-6M-URu"/>
+                <constraint firstItem="5TX-43-SZQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Knh-0B-JzY"/>
+                <constraint firstItem="5TX-43-SZQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bvp-lG-gF7"/>
+            </constraints>
+            <connections>
+                <outlet property="buEdit" destination="vs5-ba-wfm" id="GCv-gq-PAH"/>
+                <outlet property="imageViewAvatar" destination="qMK-z4-37S" id="30C-Nd-vFg"/>
+                <outlet property="imageViewMask" destination="fUD-lP-9b0" id="Qor-zu-Ng0"/>
+                <outlet property="labelDisplayName" destination="dVn-v5-fH4" id="65X-Lg-Bg8"/>
+            </connections>
+            <point key="canvasLocation" x="-1475" y="-691"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="edit_x.png" width="50" height="50"/>
+        <image name="source_mask_on.png" width="170" height="248"/>
+    </resources>
+</document>

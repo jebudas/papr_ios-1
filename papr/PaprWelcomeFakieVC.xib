@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Heavy.otf">
+            <string>SanFranciscoText-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaprWelcomeFakieVC">
+            <connections>
+                <outlet property="view" destination="e3D-eg-w3D" id="T4H-ZV-mU8"/>
+                <outlet property="viewCircleAnimation" destination="ahX-56-mHk" id="Sfk-hu-uPc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="e3D-eg-w3D">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGz-on-a84" userLabel="viewCircle">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sh2-vd-um5" userLabel="viewSpacerTop">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sh2-vd-um5" secondAttribute="height" multiplier="375:158" id="B8H-1t-jMA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahX-56-mHk">
+                            <rect key="frame" x="0.0" y="158" width="375" height="375"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ahX-56-mHk" secondAttribute="height" multiplier="1:1" id="xmq-h0-ALU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ahX-56-mHk" firstAttribute="top" secondItem="sh2-vd-um5" secondAttribute="bottom" id="6K5-JY-lxK"/>
+                        <constraint firstItem="ahX-56-mHk" firstAttribute="leading" secondItem="RGz-on-a84" secondAttribute="leading" id="nGT-Gf-5ZP"/>
+                        <constraint firstItem="sh2-vd-um5" firstAttribute="leading" secondItem="RGz-on-a84" secondAttribute="leading" id="o8w-xX-w1x"/>
+                        <constraint firstAttribute="trailing" secondItem="sh2-vd-um5" secondAttribute="trailing" id="poi-Kc-cKY"/>
+                        <constraint firstAttribute="trailing" secondItem="ahX-56-mHk" secondAttribute="trailing" id="vme-Tx-WYF"/>
+                        <constraint firstItem="sh2-vd-um5" firstAttribute="top" secondItem="RGz-on-a84" secondAttribute="top" id="wo5-XT-9GN"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAPR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jb-1a-BcN">
+                    <rect key="frame" x="137.5" y="40" width="101" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4jb-1a-BcN" secondAttribute="height" multiplier="101:27" id="nzz-xW-pAD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="23"/>
+                    <color key="textColor" red="1" green="0.15686274510000001" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RGz-on-a84" secondAttribute="trailing" id="MMT-aD-GmQ"/>
+                <constraint firstItem="4jb-1a-BcN" firstAttribute="top" secondItem="e3D-eg-w3D" secondAttribute="top" constant="40" id="dod-bs-SSP"/>
+                <constraint firstAttribute="bottom" secondItem="RGz-on-a84" secondAttribute="bottom" id="eeX-AF-FkJ"/>
+                <constraint firstAttribute="trailing" secondItem="4jb-1a-BcN" secondAttribute="trailing" constant="136.5" id="gVs-4J-mGg"/>
+                <constraint firstItem="RGz-on-a84" firstAttribute="leading" secondItem="e3D-eg-w3D" secondAttribute="leading" id="iFL-La-CDe"/>
+                <constraint firstItem="RGz-on-a84" firstAttribute="top" secondItem="e3D-eg-w3D" secondAttribute="top" id="sng-r2-uL9"/>
+                <constraint firstItem="4jb-1a-BcN" firstAttribute="leading" secondItem="e3D-eg-w3D" secondAttribute="leading" constant="137.5" id="ssI-iF-kCH"/>
+            </constraints>
+            <point key="canvasLocation" x="-1296" y="-112"/>
+        </view>
+    </objects>
+</document>

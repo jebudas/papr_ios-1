@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PaprCellPhoto">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LM8-c3-Hrq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a0R-Zp-ayn">
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Like" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gq-qi-pGV">
+                                        <rect key="frame" x="0.0" y="43" width="64" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP4-a2-GCs">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="bu_icon_save.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buSaveActual" destination="KGk-i7-Jjw" eventType="touchUpInside" id="L0i-Ow-ikQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hyd-vx-Bjc">
+                                <rect key="frame" x="64" y="0.0" width="64" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-Ia-NhF">
+                                        <rect key="frame" x="0.0" y="43" width="64" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8j-GP-NOr">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="bu_icon_repost.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buRepostActual" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bzP-Ad-J4a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-UK-bIM">
+                                <rect key="frame" x="128" y="0.0" width="64" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGk-ab-C4C">
+                                        <rect key="frame" x="0.0" y="43" width="64" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugE-Ft-XEf">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="bu_icon_comment.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buCommentActual" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hg9-yW-UkF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZk-ff-bIb">
+                                <rect key="frame" x="192" y="0.0" width="64" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rm-sN-Tae">
+                                        <rect key="frame" x="0.0" y="43" width="64" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SF-XG-qjI">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="bu_icon_share.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buShareSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nm3-t4-bDm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.15686274510000001" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LM8-c3-Hrq" secondAttribute="height" multiplier="375:86" id="WB6-4O-Bz0"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqx-zT-oBN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l6I-OP-skE">
+                                <rect key="frame" x="20" y="14" width="57" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l6I-OP-skE" secondAttribute="height" multiplier="1:1" id="sXs-fa-kq5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUn-81-dl2">
+                                <rect key="frame" x="95" y="14" width="260" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bUn-81-dl2" secondAttribute="height" multiplier="260:57" id="Tk8-Ry-6UG"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HiraMinProN-W6"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Rqx-zT-oBN" secondAttribute="height" multiplier="375:86" id="0yV-s9-pPn"/>
+                            <constraint firstItem="l6I-OP-skE" firstAttribute="top" secondItem="Rqx-zT-oBN" secondAttribute="top" constant="14" id="2FH-0d-6rS"/>
+                            <constraint firstAttribute="trailing" secondItem="bUn-81-dl2" secondAttribute="trailing" constant="20" id="3QW-cT-MlN"/>
+                            <constraint firstItem="l6I-OP-skE" firstAttribute="leading" secondItem="Rqx-zT-oBN" secondAttribute="leading" constant="20" id="F6n-Fx-BgL"/>
+                            <constraint firstAttribute="bottom" secondItem="l6I-OP-skE" secondAttribute="bottom" constant="15" id="MEn-7z-SEf"/>
+                            <constraint firstItem="bUn-81-dl2" firstAttribute="top" secondItem="Rqx-zT-oBN" secondAttribute="top" constant="14" id="THG-35-CiD"/>
+                            <constraint firstAttribute="bottom" secondItem="bUn-81-dl2" secondAttribute="bottom" constant="15" id="rso-MQ-8tq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LM8-c3-Hrq" secondAttribute="trailing" id="3md-N0-jWF"/>
+                    <constraint firstItem="LM8-c3-Hrq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="M0N-m3-PgW"/>
+                    <constraint firstItem="LM8-c3-Hrq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OqU-7k-4hb"/>
+                    <constraint firstItem="LM8-c3-Hrq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Sm5-XA-sOu"/>
+                    <constraint firstItem="Rqx-zT-oBN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aLl-AW-XfM"/>
+                    <constraint firstAttribute="trailing" secondItem="Rqx-zT-oBN" secondAttribute="trailing" id="cxM-sJ-Ewh"/>
+                    <constraint firstAttribute="bottom" secondItem="LM8-c3-Hrq" secondAttribute="bottom" constant="-0.5" id="eh8-qZ-vgp"/>
+                    <constraint firstItem="LM8-c3-Hrq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lC1-S4-FSG"/>
+                    <constraint firstAttribute="trailing" secondItem="LM8-c3-Hrq" secondAttribute="trailing" id="meS-D6-0jx"/>
+                    <constraint firstItem="Rqx-zT-oBN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wXD-dD-KKb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buComment" destination="ugE-Ft-XEf" id="rDe-JL-CGP"/>
+                <outlet property="buRepost" destination="q8j-GP-NOr" id="kTJ-eg-VXT"/>
+                <outlet property="buSave" destination="jP4-a2-GCs" id="4gZ-if-Bmc"/>
+                <outlet property="imageViewPhoto" destination="l6I-OP-skE" id="WcY-R5-R8Z"/>
+                <outlet property="labelText" destination="bUn-81-dl2" id="JeD-gL-n0s"/>
+                <outlet property="viewButtons" destination="LM8-c3-Hrq" id="26f-Zs-7hN"/>
+                <outlet property="viewSlider" destination="Rqx-zT-oBN" id="GQj-1a-W3y"/>
+            </connections>
+            <point key="canvasLocation" x="-284" y="-275"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bu_icon_comment.png" width="128" height="176"/>
+        <image name="bu_icon_repost.png" width="128" height="176"/>
+        <image name="bu_icon_save.png" width="128" height="176"/>
+        <image name="bu_icon_share.png" width="128" height="176"/>
+    </resources>
+</document>

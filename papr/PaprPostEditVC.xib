@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaprPostEditVC">
+            <connections>
+                <outlet property="tableViewEditPapr" destination="CZb-FG-ITK" id="JBd-y7-po8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewMaximum" destination="Ako-Jh-QOL" id="O2C-95-FjA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CZb-FG-ITK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="col-c9-o7B"/>
+                        <outlet property="delegate" destination="-1" id="6Qt-Nf-puO"/>
+                    </connections>
+                </tableView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ako-Jh-QOL">
+                    <rect key="frame" x="0.0" y="563" width="375" height="104"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max 6 posts per PAPR. Archive a post to continue." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgw-fg-7cu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.15686274510000001" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Vgw-fg-7cu" firstAttribute="top" secondItem="Ako-Jh-QOL" secondAttribute="top" id="323-fA-xRi"/>
+                        <constraint firstAttribute="width" secondItem="Ako-Jh-QOL" secondAttribute="height" multiplier="75:8" constant="-600" id="CJE-QT-2Ds"/>
+                        <constraint firstAttribute="trailing" secondItem="Vgw-fg-7cu" secondAttribute="trailing" id="W8g-PN-2mt"/>
+                        <constraint firstItem="Vgw-fg-7cu" firstAttribute="leading" secondItem="Ako-Jh-QOL" secondAttribute="leading" id="Y3Z-YM-Pf1"/>
+                        <constraint firstAttribute="bottom" secondItem="Vgw-fg-7cu" secondAttribute="bottom" constant="64" id="zOO-zX-bGH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CZb-FG-ITK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1gp-hg-kv4"/>
+                <constraint firstAttribute="trailing" secondItem="CZb-FG-ITK" secondAttribute="trailing" id="6q6-D1-4h2"/>
+                <constraint firstAttribute="trailing" secondItem="Ako-Jh-QOL" secondAttribute="trailing" id="Pvz-9u-Vaz"/>
+                <constraint firstAttribute="bottom" secondItem="CZb-FG-ITK" secondAttribute="bottom" id="S7h-Up-kIw"/>
+                <constraint firstAttribute="bottom" secondItem="Ako-Jh-QOL" secondAttribute="bottom" id="egi-r0-imI"/>
+                <constraint firstItem="CZb-FG-ITK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kVq-aA-lZY"/>
+                <constraint firstItem="Ako-Jh-QOL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pJ1-2m-3Hh"/>
+            </constraints>
+            <point key="canvasLocation" x="-293.5" y="27.5"/>
+        </view>
+    </objects>
+</document>
