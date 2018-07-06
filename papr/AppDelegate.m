@@ -45,6 +45,7 @@
     AWSServiceManager.defaultServiceManager.defaultServiceConfiguration = configuration;
 
     // MIXPANEL
+    // CONSIDER TURNING THIS OFF DURING DEVELOPMENT
     [Mixpanel sharedInstanceWithToken:@"dfebd8d52c4acf60c846029cca1f334c"];
 
     // HOCKEY APP
