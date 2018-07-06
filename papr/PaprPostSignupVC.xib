@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaprPostSignupVC">
+            <connections>
+                <outlet property="buBio" destination="w5M-Zr-Kc1" id="deW-7H-9lV"/>
+                <outlet property="buRequest" destination="cTC-EN-sSE" id="hbA-c2-bxW"/>
+                <outlet property="textViewTellus" destination="sZd-FH-ZPB" id="205-dO-Lfv"/>
+                <outlet property="textViewTellusFakie" destination="o9g-uW-YZx" id="1gq-Zu-hdu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHello" destination="Ef8-TB-ype" id="5j2-qp-PNr"/>
+                <outlet property="viewPatience" destination="KSv-Oq-0vX" id="1M3-dj-Qs6"/>
+                <outlet property="viewTellus" destination="YOt-J3-xrc" id="ZFr-LQ-DOX"/>
+                <outlet property="viewThanks" destination="WDG-dO-tAj" id="5hm-Hf-5sm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef8-TB-ype">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post_invite_hello.png" translatesAutoresizingMaskIntoConstraints="NO" id="Syx-zT-poz">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5M-Zr-Kc1">
+                            <rect key="frame" x="44" y="558" width="288" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <state key="normal" title="Write a Bio">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buBioSelected:" destination="-1" eventType="touchUpInside" id="5HK-pv-lLW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="xbe-6a-paP"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOt-J3-xrc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post_invite_tellus.png" translatesAutoresizingMaskIntoConstraints="NO" id="HyR-qb-B8w">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9g-uW-YZx">
+                            <rect key="frame" x="46" y="206" width="288" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="cz4-ak-bjm"/>
+                            </connections>
+                        </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sZd-FH-ZPB">
+                            <rect key="frame" x="43" y="206" width="288" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="7AP-sy-PRI"/>
+                            </connections>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTC-EN-sSE">
+                            <rect key="frame" x="43" y="343" width="288" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="cTC-EN-sSE" secondAttribute="height" multiplier="144:25" id="xdf-mS-TIo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <state key="normal" title="Request Invitation">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buRequestSelected:" destination="-1" eventType="touchUpInside" id="RHb-Sz-fOt"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-xN-4pc" userLabel="_view_spacer_bottom">
+                            <rect key="frame" x="0.0" y="393" width="375" height="274"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pSF-xN-4pc" secondAttribute="height" multiplier="375:274" id="qlj-k1-kN3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cTC-EN-sSE" firstAttribute="leading" secondItem="ZFA-Gi-4PU" secondAttribute="leading" constant="43" id="TMO-k4-nDf"/>
+                        <constraint firstItem="pSF-xN-4pc" firstAttribute="bottom" secondItem="ZFA-Gi-4PU" secondAttribute="bottom" id="VLt-oM-5km"/>
+                        <constraint firstItem="pSF-xN-4pc" firstAttribute="leading" secondItem="ZFA-Gi-4PU" secondAttribute="leading" id="agE-Ey-HuI"/>
+                        <constraint firstItem="pSF-xN-4pc" firstAttribute="top" secondItem="cTC-EN-sSE" secondAttribute="bottom" id="bdf-0K-vfw"/>
+                        <constraint firstItem="ZFA-Gi-4PU" firstAttribute="trailing" secondItem="cTC-EN-sSE" secondAttribute="trailing" constant="44" id="fJL-8H-JMl"/>
+                        <constraint firstItem="pSF-xN-4pc" firstAttribute="trailing" secondItem="ZFA-Gi-4PU" secondAttribute="trailing" id="rPY-P8-mKa"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="ZFA-Gi-4PU"/>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDG-dO-tAj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post_invite_thanks.png" translatesAutoresizingMaskIntoConstraints="NO" id="fnV-3M-Fxz">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="MV3-0X-tTa"/>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSv-Oq-0vX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post_invite_patience.png" translatesAutoresizingMaskIntoConstraints="NO" id="ak1-ip-27e">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="unh-V3-TPY"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWb-wL-4fs">
+                    <rect key="frame" x="333" y="23" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="buX.png"/>
+                    <connections>
+                        <action selector="buXSelected:" destination="-1" eventType="touchUpInside" id="dJq-WV-glQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YOt-J3-xrc" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="6uB-tg-fSJ"/>
+                <constraint firstItem="Ef8-TB-ype" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="81M-Ye-Y9z"/>
+                <constraint firstItem="KSv-Oq-0vX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="87l-ev-YnE"/>
+                <constraint firstItem="KSv-Oq-0vX" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="9FZ-Xg-Wtd"/>
+                <constraint firstItem="Ef8-TB-ype" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="BvB-GZ-pGR"/>
+                <constraint firstItem="WDG-dO-tAj" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="Dit-Cp-VOf"/>
+                <constraint firstItem="WDG-dO-tAj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FrD-T9-kws"/>
+                <constraint firstItem="WDG-dO-tAj" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Nq2-5i-6Ha"/>
+                <constraint firstItem="WDG-dO-tAj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="NvZ-On-faf"/>
+                <constraint firstItem="KSv-Oq-0vX" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="RjD-Uz-cSY"/>
+                <constraint firstItem="KSv-Oq-0vX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UD1-Tw-WF9"/>
+                <constraint firstItem="YOt-J3-xrc" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="cfT-33-8uz"/>
+                <constraint firstItem="YOt-J3-xrc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cs9-Mb-jJG"/>
+                <constraint firstItem="Ef8-TB-ype" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="oCd-e2-J5J"/>
+                <constraint firstItem="Ef8-TB-ype" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="tQ7-gG-vw0"/>
+                <constraint firstItem="YOt-J3-xrc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xdX-eq-NU9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-908.5" y="169.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buX.png" width="64" height="64"/>
+        <image name="post_invite_hello.png" width="750" height="1334"/>
+        <image name="post_invite_patience.png" width="750" height="1334"/>
+        <image name="post_invite_tellus.png" width="750" height="1334"/>
+        <image name="post_invite_thanks.png" width="750" height="1334"/>
+    </resources>
+</document>

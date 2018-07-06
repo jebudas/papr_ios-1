@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaprTabBarVC">
+            <connections>
+                <outlet property="buMore" destination="558-w4-Umb" id="i45-w0-DQT"/>
+                <outlet property="buPapr" destination="S87-bB-QZV" id="9FW-Q7-PuW"/>
+                <outlet property="buPlus" destination="enN-LV-hsV" id="Wpy-J4-Le1"/>
+                <outlet property="buPost" destination="xun-3p-V9U" id="5Mr-KJ-TQR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZr-q0-Yie">
+                    <rect key="frame" x="0.0" y="0.0" width="106" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nZr-q0-Yie" secondAttribute="height" multiplier="53:30" id="At1-kA-ikB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3X-kA-hQ3" userLabel="view_spacer_left">
+                    <rect key="frame" x="0.0" y="0.0" width="35" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="l3X-kA-hQ3" secondAttribute="height" multiplier="7:12" id="DWa-Xe-39W"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S87-bB-QZV">
+                    <rect key="frame" x="35" y="0.0" width="55" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="S87-bB-QZV" secondAttribute="height" multiplier="11:12" id="VsN-pY-Ykr"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="tab_papr_on.png"/>
+                    <connections>
+                        <action selector="buPaprSelected:" destination="-1" eventType="touchUpInside" id="xfQ-1g-zkD"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ioe-Zt-kNG" userLabel="view_spacer_left2">
+                    <rect key="frame" x="90" y="0.0" width="23" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ioe-Zt-kNG" secondAttribute="height" multiplier="23:60" id="hRg-H4-XOo"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enN-LV-hsV">
+                    <rect key="frame" x="113" y="0.0" width="55" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="enN-LV-hsV" secondAttribute="height" multiplier="11:12" id="IIj-0Q-3DO"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="tab_plus_off.png"/>
+                    <connections>
+                        <action selector="buPlusSelected:" destination="-1" eventType="touchUpInside" id="Bip-Mh-gFA"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYo-dB-3hZ" userLabel="view_spacer_left3">
+                    <rect key="frame" x="168" y="0.0" width="26" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EYo-dB-3hZ" secondAttribute="height" multiplier="13:30" id="ioy-og-0eW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xun-3p-V9U">
+                    <rect key="frame" x="194" y="0.0" width="55" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xun-3p-V9U" secondAttribute="height" multiplier="11:12" id="Xha-sD-WDR"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="tab_post_off.png"/>
+                    <connections>
+                        <action selector="buPostSelected:" destination="-1" eventType="touchUpInside" id="4Qk-xo-617"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="558-w4-Umb">
+                    <rect key="frame" x="276" y="0.0" width="55" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="558-w4-Umb" secondAttribute="height" multiplier="11:12" id="8Zo-Ti-eN2"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="tab_more_off.png"/>
+                    <connections>
+                        <action selector="buMoreSelected:" destination="-1" eventType="touchUpInside" id="u6z-Hc-tnW"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Qt-dG-n3E" userLabel="view_spacer_right1">
+                    <rect key="frame" x="331" y="0.0" width="44" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0Qt-dG-n3E" secondAttribute="height" multiplier="11:15" id="6Ce-Ed-zCP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xun-3p-V9U" secondAttribute="bottom" id="2jp-hF-A6r"/>
+                <constraint firstAttribute="bottom" secondItem="ioe-Zt-kNG" secondAttribute="bottom" id="3TD-AH-ngV"/>
+                <constraint firstItem="S87-bB-QZV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6aQ-Tl-8QP"/>
+                <constraint firstItem="EYo-dB-3hZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8cK-Jg-JDa"/>
+                <constraint firstItem="S87-bB-QZV" firstAttribute="leading" secondItem="l3X-kA-hQ3" secondAttribute="trailing" id="CJt-fJ-uYj"/>
+                <constraint firstAttribute="bottom" secondItem="enN-LV-hsV" secondAttribute="bottom" id="E3g-Fw-8fc"/>
+                <constraint firstItem="ioe-Zt-kNG" firstAttribute="leading" secondItem="S87-bB-QZV" secondAttribute="trailing" id="Ee8-pc-oKy"/>
+                <constraint firstAttribute="bottom" secondItem="l3X-kA-hQ3" secondAttribute="bottom" id="GFk-pV-wwh"/>
+                <constraint firstAttribute="bottom" secondItem="nZr-q0-Yie" secondAttribute="bottom" id="K51-4L-K64"/>
+                <constraint firstItem="xun-3p-V9U" firstAttribute="leading" secondItem="EYo-dB-3hZ" secondAttribute="trailing" id="Pd9-Cw-IRu"/>
+                <constraint firstItem="xun-3p-V9U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RG5-1o-qSA"/>
+                <constraint firstItem="nZr-q0-Yie" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WH3-Sj-ixi"/>
+                <constraint firstItem="nZr-q0-Yie" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aKm-X1-ZJW"/>
+                <constraint firstItem="l3X-kA-hQ3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bqb-68-NFU"/>
+                <constraint firstAttribute="trailing" secondItem="0Qt-dG-n3E" secondAttribute="trailing" id="ebB-9a-gZl"/>
+                <constraint firstItem="enN-LV-hsV" firstAttribute="leading" secondItem="ioe-Zt-kNG" secondAttribute="trailing" id="f9H-mx-gAz"/>
+                <constraint firstAttribute="bottom" secondItem="EYo-dB-3hZ" secondAttribute="bottom" id="i1u-sA-bi8"/>
+                <constraint firstItem="enN-LV-hsV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kl1-Xj-nXV"/>
+                <constraint firstItem="EYo-dB-3hZ" firstAttribute="leading" secondItem="enN-LV-hsV" secondAttribute="trailing" id="lIK-cy-4cV"/>
+                <constraint firstAttribute="bottom" secondItem="0Qt-dG-n3E" secondAttribute="bottom" id="m7K-gM-KKT"/>
+                <constraint firstAttribute="bottom" secondItem="558-w4-Umb" secondAttribute="bottom" id="ryO-GO-r5o"/>
+                <constraint firstItem="0Qt-dG-n3E" firstAttribute="leading" secondItem="558-w4-Umb" secondAttribute="trailing" id="sJC-dm-I9N"/>
+                <constraint firstAttribute="bottom" secondItem="S87-bB-QZV" secondAttribute="bottom" id="sea-IU-50C"/>
+                <constraint firstItem="l3X-kA-hQ3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="stR-AO-0DG"/>
+                <constraint firstItem="ioe-Zt-kNG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tyz-yu-1ny"/>
+                <constraint firstItem="558-w4-Umb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vc5-Ku-Cj4"/>
+                <constraint firstItem="0Qt-dG-n3E" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wDV-3I-8Qc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-907" y="-793"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_more_off.png" width="110" height="120"/>
+        <image name="tab_papr_on.png" width="110" height="120"/>
+        <image name="tab_plus_off.png" width="110" height="120"/>
+        <image name="tab_post_off.png" width="110" height="120"/>
+    </resources>
+</document>
